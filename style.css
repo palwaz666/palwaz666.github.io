@@ -1,297 +1,300 @@
 
-    body {
-        font-family: "Raleway", sans-serif; /* Fuente Raleway */
-        background-color: #f5f5f5; /* Cambio de color de fondo */
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        flex-direction: column; /* Apila los elementos verticalmente */
-        align-items: center; /* Centra horizontalmente */
-    }
-    
-    .header-content {
-        display: flex;
-        justify-content: center; /* Centra los elementos horizontalmente */
-        align-items: center; /* Centra los elementos verticalmente */
-        padding-bottom: 10px;
-    }
-    
-    .title-logo {
-        display: flex;
-        align-items: center; /* Centra los elementos verticalmente */
-        margin-bottom: 10px; /* Espacio entre el título y el timer */
-    }
-    
-    .title-logo h1 {
-        margin-right: 10px; /* Espacio entre el título y el logo */
-    }
-    
-    #date-time {
-        color: #fff;
-        font-size: 18px;
-        font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
-    }
-    
-    .reloj {
-        font-family: "Roboto Mono", monospace;
-        color: #fff;
-        text-align: center;
-
-    }
-    
-    .reloj p {
-        margin: 0;
-
-
-    }
-
-    .tiempo {
-        letter-spacing: 0.1em;
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-
-    .fecha {
-        letter-spacing: 0.1em;
-        font-size: 16px;
-    }
-    #toggle-form {
-        background-color: #000000; /* Color de fondo */
-        color: #fff; /* Color del texto */
-        border: none; /* Sin borde */
-        padding: 10px 20px; /* Espaciado interno */
-        font-size: 16px; /* Tamaño del texto */
-        cursor: pointer; /* Cursor al pasar el mouse */
-        border-radius: 5px; /* Bordes redondeados */
-        transition: background-color 0.3s; /* Transición suave */
-        margin: 10px auto; /* Centrar horizontalmente */
-        display: block; /* Asegurar que el botón ocupe toda la anchura disponible */
-    }
-    
-    #toggle-form:hover {
-        background-color: #555555; /* Cambio de color al pasar el mouse */
-    }
-    
-    #publicar {
-        background-color: #000000; /* Color de fondo */
-        color: #fff; /* Color del texto */
-        border: none; /* Sin borde */
-        padding: 10px 20px; /* Espaciado interno */
-        font-size: 16px; /* Tamaño del texto */
-        margin: 0 auto; /* Centrar horizontalmente */
-        display: block;
-        text-align: center;
-    }
-
-    .article-count {
-        font-size: 14px;
-        color: #888;
-    }
-
-    h1 {
-        text-align: center; /* Alinea el texto del título al centro */
-        font-size: 100px;
-        font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
-    }
-
-    h2 {
-        font-family: "Oswald", sans-serif; /* Fuente Oswald */
-    }
-    
-    img {
-        width: 100px;
-        height: 100px;
-        margin-left: 10px; /* Ajusta el espacio entre el título y la imagen */
-    }
-    #diegoparra {
-        border: 1px solid #ccc;
-        padding: 5px;
-        margin: 10px;
-        vertical-align: middle;
-    }
-    .row {
-        display: flex;
-    }
-
-    .col-md-8 {
-        margin-left: auto;
-    }
-
-    nav {
-        background-color: #444;
-        padding: 10px;
-        text-align: center;
-    }
-    section {
-        padding: 20px;
-    }
-
-    #form-articulo {
-        background-color: #f5f5f5; /* Color de fondo */
-        padding: 20px; /* Espaciado interno */
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    }
-    
-    #form-articulo label {
-        font-weight: bold; /* Texto en negrita */
-        margin-bottom: 5px; /* Espaciado inferior */
-    }
-    #form-articulo select {
-        width: 99%; /* Ancho completo */
-        padding: 10px; /* Espaciado interno */
-        margin-bottom: 10px; /* Espaciado inferior */
-        border: 1px solid #ccc; /* Borde */
-        border-radius: 5px; /* Bordes redondeados */
-    }
-
-    #form-articulo input[type="text"],
-    #form-articulo textarea {
-        width: 99%; /* Ancho completo */
-        padding: 10px; /* Espaciado interno */
-        margin-bottom: 10px; /* Espaciado inferior */
-        border: 1px solid #ccc; /* Borde */
-        border-radius: 5px; /* Bordes redondeados */
-    }
-    
-    #form-articulo button {
-        background-color: #333; /* Color de fondo */
-        color: #fff; /* Color de texto */
-        padding: 10px 20px; /* Espaciado interno */
-        border: none; /* Sin borde */
-        border-radius: 5px; /* Bordes redondeados */
-        cursor: pointer; /* Cursor de puntero */
-    }
-    
-    #form-articulo button:hover {
-        background-color: #acacac; /* Color de fondo al pasar el mouse */
-    }
-    
-
-    /* Estilo para los vínculos */
-    a:link, a:visited {
-        color: #999; /* Color de los enlaces */
-        text-decoration: underline; /* Subrayado por defecto */
-        font-weight: normal; /* Estilo de fuente normal por defecto */
+body {
+    font-family: "Raleway", sans-serif; /* Fuente Raleway */
+    background-color: #f5f5f5; /* Cambio de color de fondo */
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
 }
 
-    /* Estilo para los vínculos cuando el mouse está encima */
-    a:hover {
-        text-decoration: none; /* Quitar subrayado cuando el mouse está encima */
-        font-weight: bold; /* Estilo de fuente en negrita cuando el mouse está encima */
+.header-content {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding-bottom: 10px;
 }
 
-    .news-item:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Cambia el último valor (0.9) para ajustar la opacidad */
+.title-logo {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 10px; /* Espacio entre el título y el timer */
+}
+
+.title-logo h1 {
+    margin-right: 10px; /* Espacio entre el título y el logo */
+}
+
+#date-time {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
+}
+
+.reloj {
+    font-family: "Roboto Mono", monospace;
+    color: #fff;
+    text-align: center;
+
+}
+
+.reloj p {
+    margin: 0;
+
+
+}
+
+.tiempo {
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.fecha {
+    letter-spacing: 0.1em;
+    font-size: 16px;
+}
+#toggle-form {
+    background-color: #000000; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+    margin: 10px auto; /* Centrar horizontalmente */
+    display: block; /* Asegurar que el botón ocupe toda la anchura disponible */
+}
+
+#toggle-form:hover {
+    background-color: #555555; /* Cambio de color al pasar el mouse */
+}
+
+#publicar {
+    background-color: #000000; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block;
+    text-align: center;
+}
+
+.article-count {
+    font-size: 14px;
+    color: #888;
+}
+
+h1 {
+    font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
+}
+
+h2 {
+    font-family: "Oswald", sans-serif; /* Fuente Oswald */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px; /* Ajusta el espacio entre el título y la imagen */
+}
+#diegoparra {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 10px;
+    vertical-align: middle;
+}
+.row {
+    display: flex;
+}
+
+.col-md-8 {
+    margin-left: auto;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+section {
+    padding: 20px;
+}
+
+#form-articulo {
+    background-color: #f5f5f5; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#form-articulo label {
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+#form-articulo select {
+    width: 99%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#form-articulo input[type="text"],
+#form-articulo textarea {
+    width: 99%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#form-articulo button {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+#form-articulo button:hover {
+    background-color: #acacac; /* Color de fondo al pasar el mouse */
 }
 
 
-    /* Estilos para las noticias */
-    .news-item {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color: #fff;
-        padding: 20px; /* Padding para separar el contenido del fondo gris */
-    }
-    
-    .news-image {
-        width: 15%; /* Cambia el porcentaje según lo desees */
-        height: auto;
-        margin-right: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    .news-text {
-        flex: 1;
-    }
-    
-    /* Estilos para la barra separadora */
-    hr {
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-        margin: 20px 0;
-    }
+/* Estilo para los vínculos */
+a:link, a:visited {
+    color: #999; /* Color de los enlaces */
+    text-decoration: underline; /* Subrayado por defecto */
+    font-weight: normal; /* Estilo de fuente normal por defecto */
+}
+
+/* Estilo para los vínculos cuando el mouse está encima */
+a:hover {
+    text-decoration: none; /* Quitar subrayado cuando el mouse está encima */
+    font-weight: bold; /* Estilo de fuente en negrita cuando el mouse está encima */
+}
+
+.news-item:hover {
+background-color: rgba(255, 255, 255, 0.9); /* Cambia el último valor (0.9) para ajustar la opacidad */
+}
 
 
-    footer {
-        position: relative;
-        margin-top: -50px; /* height of footer */
-        padding: 10px;
-        text-align: center;
-        background-color: #c9d2d0;
-        color: #31231e;
-        clear: both;
-    }
+/* Estilos para las noticias */
+.news-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px; /* Padding para separar el contenido del fondo gris */
+}
 
-    .news-item {
-        padding: 10px;
-        border: 1px solid #ccc;
-        background-color: #fff;
-        transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios */
-    }
-    
-    .news-item:hover {
-        background-color: rgba(29, 29, 29, 0.1);
-        color: #292828;
-    }
-    
-    /* Estilos para las imágenes dentro de los bloques */
-    .news-item img {
-        max-width: 100%; /* Ajustar el tamaño máximo de la imagen al contenedor */
-        height: auto; /* Mantener la proporción de aspecto de la imagen */
-    }
-    
-    .eliminar-articulo {
-        background-color: #dc3545; /* Color de fondo */
-        color: #fff; /* Color del texto */
-        border: none; /* Sin borde */
-        padding: 10px 20px; /* Padding interno */
-        border-radius: 5px; /* Borde redondeado */
-        cursor: pointer; /* Cambio de cursor al pasar por encima */
-        transition: background-color 0.3s; /* Transición suave del color de fondo */
-    }
-    
-    .eliminar-articulo:hover {
-        background-color: #c82333; /* Color de fondo al pasar el mouse */
-    }
+.news-image {
+    width: 15%; /* Cambia el porcentaje según lo desees */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-    /* Estilos adicionales para el formulario de contacto */
-    #contacto {
-        background-color: #f9f9f9;
-        padding: 20px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    #contacto label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    #contacto input[type="text"],
-    #contacto textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-    #contacto button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    #contacto button:hover {
-        background-color: #45a049;
-    }
-    
+.news-text {
+    flex: 1;
+}
+
+/* Estilos para la barra separadora */
+.custom-hr {
+    height: 3px;
+    background-color: #ff0000;
+    border: none;
+}
+hr {
+    border: none !important;
+    height: 2px !important;
+    background-color: #2e2e2e !important;
+    margin: 10px 8px !important;
+}
+
+
+
+footer {
+    position: relative;
+    margin-top: -50px; /* height of footer */
+    padding: 10px;
+    text-align: center;
+    background-color: #c9d2d0;
+    color: #31231e;
+    clear: both;
+}
+
+.news-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios */
+}
+
+.news-item:hover {
+    background-color: rgba(29, 29, 29, 0.1);
+    color: #292828;
+}
+
+/* Estilos para las imágenes dentro de los bloques */
+.news-item img {
+    max-width: 100%; /* Ajustar el tamaño máximo de la imagen al contenedor */
+    height: auto; /* Mantener la proporción de aspecto de la imagen */
+}
+
+.eliminar-articulo {
+    background-color: #dc3545; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Padding interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.eliminar-articulo:hover {
+    background-color: #c82333; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos adicionales para el formulario de contacto */
+#contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#contacto label {
+    display: block;
+    margin-bottom: 10px;
+}
+#contacto input[type="text"],
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#contacto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#contacto button:hover {
+    background-color: #45a049;
+}

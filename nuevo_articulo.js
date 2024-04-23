@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
         categoriaElemento.textContent = categoria;
 
         const hr = document.createElement('hr');
+        hr.classList.add('is-divider', 'is-size-small'); // Agrega clases de Bulma
+        texto.appendChild(hr);
+
+
 
         const descripcionParrafos = descripcion.split('\n').map(parrafo => {
             const p = document.createElement('p');
