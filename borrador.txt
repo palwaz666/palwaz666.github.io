@@ -1,1 +1,76 @@
-    <div id="date-time"></div>
+IMAGEN ZOOMEABLE (FUNCIONAL)
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const zoomableImages = document.querySelectorAll('.zoomable');
+
+  zoomableImages.forEach(function(image) {
+    image.addEventListener('click', function(event) {
+      event.stopPropagation(); // Evitar que el evento se propague a los elementos hijos
+
+      // Crear una nueva imagen con el atributo src de la imagen actual
+      const fullSizeImage = document.createElement('img');
+      fullSizeImage.src = image.src;
+
+      // Agregar la nueva imagen al cuerpo
+      document.body.appendChild(fullSizeImage);
+
+      // Agregar clase para mostrar la imagen en tamaño completo
+      fullSizeImage.classList.add('full-size');
+
+      // Agregar evento de clic al documento para ocultar la imagen
+      document.addEventListener('click', function hideImage(event) {
+        if (event.target !== fullSizeImage) {
+          fullSizeImage.remove();
+          document.removeEventListener('click', hideImage);
+        }
+      }, { once: true });
+    });
+  });
+});
+
+
+opcion 2
+document.addEventListener('DOMContentLoaded', function() {
+  const zoomableImages = document.querySelectorAll('.zoomable');
+
+  zoomableImages.forEach(function(image) {
+    image.addEventListener('click', function(event) {
+      event.stopPropagation(); // Evitar que el evento se propague a los elementos hijos
+
+      // Crear el contenedor para la imagen completa
+      const fullSizeContainer = document.createElement('div');
+      fullSizeContainer.classList.add('full-size');
+
+      // Crear una nueva imagen con el atributo src de la imagen actual
+      const fullSizeImage = document.createElement('img');
+      fullSizeImage.src = image.src;
+
+      // Agregar la nueva imagen al contenedor
+      fullSizeContainer.appendChild(fullSizeImage);
+
+      // Agregar el contenedor al cuerpo
+      document.body.appendChild(fullSizeContainer);
+
+      // Agregar evento de clic al documento para ocultar la imagen
+      document.addEventListener('click', function hideImage(event) {
+        if (event.target !== fullSizeImage && event.target !== fullSizeContainer) {
+          fullSizeContainer.remove();
+          document.removeEventListener('click', hideImage);
+        }
+      }, { once: true });
+    });
+  });
+});
+
+
+
+CONTACTO FORM
+        const formContacto = document.getElementById('form-contacto');
+
+        formContacto.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
+
+            // Aquí puedes agregar el código para enviar el formulario, como una solicitud AJAX o simplemente mostrar un mensaje de éxito
+            alert('Formulario enviado correctamente');
+            formContacto.reset(); // Limpiar el formulario después del envío
+        });

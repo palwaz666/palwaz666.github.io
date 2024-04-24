@@ -327,3 +327,35 @@ footer {
 #contacto button:hover {
     background-color: #45a049;
 }
+
+@keyframes zoomIn {
+    from {
+      transform: scale(0); /* Escala inicial de 0 (invisible) */
+    }
+    to {
+      transform: scale(1); /* Escala final de 1 (tamaño completo) */
+    }
+  }
+  
+  .full-size {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8); /* Opcional: fondo oscuro detrás de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomIn 0.3s ease; /* Aplicar la animación de zoom */
+  }
+  
+  .full-size img {
+    max-width: 80%; /* Ajusta esto si necesitas un tamaño diferente */
+    max-height: 80%;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+  
