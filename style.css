@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .title-logo {
@@ -94,6 +94,7 @@ header {
 
 h1 {
     font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
+    
 }
 
 h2 {
@@ -123,7 +124,46 @@ nav {
     background-color: #444;
     padding: 10px;
     text-align: center;
+    transition: top 1s; /* Transición suave */
+    position: relative; /* Posición relativa para el estado inicial */
+    z-index: 1000; /* Asegúrate de que el navbar se sobreponga a otros elementos */
 }
+
+/* Estilo para cuando el navbar está fijado al scroll */
+nav.fixed-top {
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Pega el navbar al borde superior */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra para diferenciarlo del contenido */
+}
+.nav-visible {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform ease 2.3s; 
+    transition: transform ease 400ms;
+}
+.nav-fixed {
+    position: fixed;
+    -webkit-transform: translate3d(0, -76px, 0);
+    transform: translate3d(0, -76px, 0);
+    -webkit-transition: -webkit-transform ease 2s; 
+    transition: transform ease 400ms;
+}
+
+/* Estilo para los vínculos */
+a:link, a:visited {
+    color: #999; /* Color de los enlaces */
+    text-decoration: underline; /* Subrayado por defecto */
+    font-weight: normal; /* Estilo de fuente normal por defecto */
+}
+
+/* Estilo para los vínculos cuando el mouse está encima */
+a:hover {
+    text-decoration: none; /* Quitar subrayado cuando el mouse está encima */
+    font-weight: bold; /* Estilo de fuente en negrita cuando el mouse está encima */
+}
+
 section {
     padding: 20px;
 }
@@ -170,18 +210,7 @@ section {
 }
 
 
-/* Estilo para los vínculos */
-a:link, a:visited {
-    color: #999; /* Color de los enlaces */
-    text-decoration: underline; /* Subrayado por defecto */
-    font-weight: normal; /* Estilo de fuente normal por defecto */
-}
 
-/* Estilo para los vínculos cuando el mouse está encima */
-a:hover {
-    text-decoration: none; /* Quitar subrayado cuando el mouse está encima */
-    font-weight: bold; /* Estilo de fuente en negrita cuando el mouse está encima */
-}
 
 .news-item:hover {
 background-color: rgba(255, 255, 255, 0.9); /* Cambia el último valor (0.9) para ajustar la opacidad */
