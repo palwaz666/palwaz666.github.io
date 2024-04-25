@@ -1,39 +1,49 @@
-
 body {
-    font-family: "Raleway", sans-serif; /* Fuente Raleway */
-    background-color: #f5f5f5; /* Cambio de color de fondo */
+    font-family: "Raleway", sans-serif;
+    /* Fuente Raleway */
+    background-color: #f5f5f5;
+    /* Cambio de color de fondo */
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #333;
     color: #fff;
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra horizontalmente */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
 }
 
 .header-content {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
     padding-top: 10px;
 }
 
 .title-logo {
     display: flex;
-    align-items: center; /* Centra los elementos verticalmente */
-    margin-bottom: 10px; /* Espacio entre el título y el timer */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    margin-bottom: 10px;
+    /* Espacio entre el título y el timer */
 }
 
 .title-logo h1 {
-    margin-right: 10px; /* Espacio entre el título y el logo */
+    margin-right: 10px;
+    /* Espacio entre el título y el logo */
 }
 
 #date-time {
     color: #fff;
     font-size: 18px;
-    font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
+    font-family: "Roboto Mono", monospace;
+    /* Fuente Roboto Mono */
 }
 
 .reloj {
@@ -59,30 +69,48 @@ header {
     letter-spacing: 0.1em;
     font-size: 16px;
 }
+
 #toggle-form {
-    background-color: #000000; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño del texto */
-    cursor: pointer; /* Cursor al pasar el mouse */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Transición suave */
-    margin: 10px auto; /* Centrar horizontalmente */
-    display: block; /* Asegurar que el botón ocupe toda la anchura disponible */
+    background-color: #000000;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño del texto */
+    cursor: pointer;
+    /* Cursor al pasar el mouse */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición suave */
+    margin: 10px auto;
+    /* Centrar horizontalmente */
+    display: block;
+    /* Asegurar que el botón ocupe toda la anchura disponible */
 }
 
 #toggle-form:hover {
-    background-color: #555555; /* Cambio de color al pasar el mouse */
+    background-color: #555555;
+    /* Cambio de color al pasar el mouse */
 }
 
 #publicar {
-    background-color: #000000; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño del texto */
-    margin: 0 auto; /* Centrar horizontalmente */
+    background-color: #555555;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño del texto */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
     display: block;
     text-align: center;
 }
@@ -93,25 +121,30 @@ header {
 }
 
 h1 {
-    font-family: "Roboto Mono", monospace; /* Fuente Roboto Mono */
-    
+    font-family: "Roboto Mono", monospace;
+    /* Fuente Roboto Mono */
+
 }
 
 h2 {
-    font-family: "Oswald", sans-serif; /* Fuente Oswald */
+    font-family: "Oswald", sans-serif;
+    /* Fuente Oswald */
 }
 
 img {
     width: 100px;
     height: 100px;
-    margin-left: 10px; /* Ajusta el espacio entre el título y la imagen */
+    margin-left: 10px;
+    /* Ajusta el espacio entre el título y la imagen */
 }
+
 #diegoparra {
     border: 1px solid #ccc;
     padding: 5px;
     margin: 10px;
     vertical-align: middle;
 }
+
 .row {
     display: flex;
 }
@@ -124,44 +157,59 @@ nav {
     background-color: #444;
     padding: 10px;
     text-align: center;
-    transition: top 1s; /* Transición suave */
-    position: relative; /* Posición relativa para el estado inicial */
-    z-index: 1000; /* Asegúrate de que el navbar se sobreponga a otros elementos */
+    transition: top 1s;
+    /* Transición suave */
+    position: relative;
+    /* Posición relativa para el estado inicial */
+    z-index: 1000;
+    /* Asegúrate de que el navbar se sobreponga a otros elementos */
 }
 
 /* Estilo para cuando el navbar está fijado al scroll */
 nav.fixed-top {
-    position: fixed; /* Fija el navbar en la parte superior */
-    top: 0; /* Pega el navbar al borde superior */
-    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra para diferenciarlo del contenido */
+    position: fixed;
+    /* Fija el navbar en la parte superior */
+    top: 0;
+    /* Pega el navbar al borde superior */
+    width: 100%;
+    /* Ocupa el 100% del ancho de la pantalla */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra para diferenciarlo del contenido */
 }
+
 .nav-visible {
     visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform ease 2.3s; 
+    -webkit-transition: -webkit-transform ease 2.3s;
     transition: transform ease 400ms;
 }
+
 .nav-fixed {
     position: fixed;
     -webkit-transform: translate3d(0, -76px, 0);
     transform: translate3d(0, -76px, 0);
-    -webkit-transition: -webkit-transform ease 2s; 
+    -webkit-transition: -webkit-transform ease 2s;
     transition: transform ease 400ms;
 }
 
 /* Estilo para los vínculos */
-a:link, a:visited {
-    color: #999; /* Color de los enlaces */
-    text-decoration: underline; /* Subrayado por defecto */
-    font-weight: normal; /* Estilo de fuente normal por defecto */
+a:link,
+a:visited {
+    color: #999;
+    /* Color de los enlaces */
+    text-decoration: underline;
+    /* Subrayado por defecto */
+    font-weight: normal;
+    /* Estilo de fuente normal por defecto */
 }
 
 /* Estilo para los vínculos cuando el mouse está encima */
 a:hover {
-    text-decoration: none; /* Quitar subrayado cuando el mouse está encima */
-    font-weight: bold; /* Estilo de fuente en negrita cuando el mouse está encima */
+    text-decoration: none;
+    /* Quitar subrayado cuando el mouse está encima */
+    font-weight: bold;
+    /* Estilo de fuente en negrita cuando el mouse está encima */
 }
 
 section {
@@ -169,51 +217,76 @@ section {
 }
 
 #form-articulo {
-    background-color: #f5f5f5; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #f5f5f5;
+    /* Color de fondo */
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 #form-articulo label {
-    font-weight: bold; /* Texto en negrita */
-    margin-bottom: 5px; /* Espaciado inferior */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: 5px;
+    /* Espaciado inferior */
 }
+
 #form-articulo select {
-    width: 99%; /* Ancho completo */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 10px; /* Espaciado inferior */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
+    width: 99%;
+    /* Ancho completo */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+    border: 1px solid #ccc;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
 }
 
 #form-articulo input[type="text"],
 #form-articulo textarea {
-    width: 99%; /* Ancho completo */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 10px; /* Espaciado inferior */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
+    width: 99%;
+    /* Ancho completo */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+    border: 1px solid #ccc;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
 }
 
 #form-articulo button {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color de texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero */
+    background-color: #333;
+    /* Color de fondo */
+    color: #fff;
+    /* Color de texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor de puntero */
 }
 
 #form-articulo button:hover {
-    background-color: #acacac; /* Color de fondo al pasar el mouse */
+    background-color: #acacac;
+    /* Color de fondo al pasar el mouse */
 }
 
 
 
 
 .news-item:hover {
-background-color: rgba(255, 255, 255, 0.9); /* Cambia el último valor (0.9) para ajustar la opacidad */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Cambia el último valor (0.9) para ajustar la opacidad */
 }
 
 
@@ -224,11 +297,13 @@ background-color: rgba(255, 255, 255, 0.9); /* Cambia el último valor (0.9) par
     align-items: center;
     margin-bottom: 20px;
     background-color: #fff;
-    padding: 20px; /* Padding para separar el contenido del fondo gris */
+    padding: 20px;
+    /* Padding para separar el contenido del fondo gris */
 }
 
 .news-image {
-    width: 15%; /* Cambia el porcentaje según lo desees */
+    width: 15%;
+    /* Cambia el porcentaje según lo desees */
     height: auto;
     margin-right: 20px;
     border-radius: 10px;
@@ -245,6 +320,7 @@ background-color: rgba(255, 255, 255, 0.9); /* Cambia el último valor (0.9) par
     background-color: #ff0000;
     border: none;
 }
+
 hr {
     border: none !important;
     height: 2px !important;
@@ -256,7 +332,8 @@ hr {
 
 footer {
     position: relative;
-    margin-top: -50px; /* height of footer */
+    margin-top: -50px;
+    /* height of footer */
     padding: 10px;
     text-align: center;
     background-color: #c9d2d0;
@@ -268,7 +345,8 @@ footer {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave para los cambios */
 }
 
 .news-item:hover {
@@ -278,22 +356,32 @@ footer {
 
 /* Estilos para las imágenes dentro de los bloques */
 .news-item img {
-    max-width: 100%; /* Ajustar el tamaño máximo de la imagen al contenedor */
-    height: auto; /* Mantener la proporción de aspecto de la imagen */
+    max-width: 100%;
+    /* Ajustar el tamaño máximo de la imagen al contenedor */
+    height: auto;
+    /* Mantener la proporción de aspecto de la imagen */
 }
 
 .eliminar-articulo {
-    background-color: #dc3545; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Padding interno */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambio de cursor al pasar por encima */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    background-color: #dc3545;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Padding interno */
+    border-radius: 5px;
+    /* Borde redondeado */
+    cursor: pointer;
+    /* Cambio de cursor al pasar por encima */
+    transition: background-color 0.3s;
+    /* Transición suave del color de fondo */
 }
 
 .eliminar-articulo:hover {
-    background-color: #c82333; /* Color de fondo al pasar el mouse */
+    background-color: #c82333;
+    /* Color de fondo al pasar el mouse */
 }
 
 /* Estilos adicionales para el formulario de contacto */
@@ -303,10 +391,12 @@ footer {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
 #contacto label {
     display: block;
     margin-bottom: 10px;
 }
+
 #contacto input[type="text"],
 #contacto textarea {
     width: 100%;
@@ -316,6 +406,7 @@ footer {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 #contacto button {
     background-color: #4CAF50;
     color: white;
@@ -324,38 +415,115 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+
 #contacto button:hover {
     background-color: #45a049;
 }
 
 @keyframes zoomIn {
     from {
-      transform: scale(0); /* Escala inicial de 0 (invisible) */
+        transform: scale(0);
+        /* Escala inicial de 0 (invisible) */
     }
+
     to {
-      transform: scale(1); /* Escala final de 1 (tamaño completo) */
+        transform: scale(1);
+        /* Escala final de 1 (tamaño completo) */
     }
-  }
-  
-  .full-size {
+}
+
+.full-size {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.8); /* Opcional: fondo oscuro detrás de la imagen */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Opcional: fondo oscuro detrás de la imagen */
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: zoomIn 0.3s ease; /* Aplicar la animación de zoom */
-  }
-  
-  .full-size img {
-    max-width: 80%; /* Ajusta esto si necesitas un tamaño diferente */
+    animation: zoomIn 0.3s ease;
+    /* Aplicar la animación de zoom */
+}
+
+.full-size img {
+    max-width: 80%;
+    /* Ajusta esto si necesitas un tamaño diferente */
     max-height: 80%;
     height: auto;
     width: auto;
     margin: 0;
-  }
-  
+}
+
+
+#avisos {
+    background-color: black;
+    color: white;
+}
+
+.avisos-container {
+    display: flex;
+    overflow: hidden;
+    /* Para ocultar los avisos que se desplazan fuera del contenedor */
+    animation: scroll-left 25s linear infinite;
+    /* Inicia la animación de desplazamiento */
+}
+
+.avisos-container p {
+    white-space: nowrap;
+    margin-right: 20px;
+    /* Ajusta el espacio entre avisos */
+    font-size: 13px;
+    position: relative; /* Establece la posición relativa */
+    padding-right: 10px; /* Espacio para la barra separadora */
+}
+
+/* Barra separadora */
+.avisos-container p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px; /* Ancho de la barra separadora vertical */
+    background-color: #ccc; /* Color de la barra separadora */
+}
+
+.avisos-container p:last-child::after {
+    display: none; /* Oculta la barra separadora del último aviso */
+}
+
+.avisos-container.paused {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left-individual {
+    0% {
+        transform: translateX(100%);
+    }
+
+    10% {
+        transform: translateX(0%);
+    }
+
+    90% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+

@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Faro - Periódico Local</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuente Roboto Mono-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!-- Fuente Raleway-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Fuente Oswald-->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <!-- Fuente Tulpen One-->
-    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Faro - Periódico Local</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente Roboto Mono-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <!-- Fuente Raleway-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Fuente Oswald-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- Fuente Tulpen One-->
+  <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="header-content">
-        <div class="title-logo">
-            <h1 class="is-size-1">El Faro</h1>
-            <img src="media/faroder.png" alt="Logo">
-        </div>
+      <div class="title-logo">
+        <h1 class="is-size-1">El Faro</h1>
+        <img src="media/faroder.png" alt="Logo">
+      </div>
     </div>
     <div class="reloj">
       <p class="fecha"></p>
@@ -32,248 +36,364 @@
     <script src="reloj_fecha.js"></script>
   </header>
 
-    <!-- Menú  -->
-    
-    <nav id="navbar" class="sticky-nav">
-      <a href="#inicio">Inicio</a> | 
-      <a href="#deporte">Deporte</a> | 
-      <a href="#negocios">Negocios</a> |
-      <a href="#contacto">Contáctanos</a>
-    </nav>
+  <!-- Menú  -->
+  <nav id="navbar" class="sticky-nav">
+    <a href="#inicio">Inicio</a> |
+    <a href="#deporte">Deporte</a> |
+    <a href="#negocios">Negocios</a> |
+    <a href="#contacto">Contáctanos</a>
+  </nav>
+  
+
+  <section id="avisos" onmouseover="pauseAvisos()" onmouseout="resumeAvisos()">
+    <div class="avisos-container">
+      <!-- Los avisos individuales se agregarán aquí -->
+      <p> Oficina o Casa Oficina en Arriendo<br> SECTOR EL GOLF / WTC<br> Las Condes, Metropolitana de
+        Santiago
+        <br><a
+          href="https://www.economicos.cl/propiedades/oficina-o-casa-oficina-en-arriendo-en-las-condes-codR99575120-8L0-2910323.html">Ir
+          al aviso</a>
+      </p>
+
+      <p> Fiestas ,musica en vivo,
+        <br>Karaoke, Show Dj.
+        <br>Ñuñoa, Metropolitana de Santiago
+        <br><a href="https://www.economicos.cl/servicios/fiestas-musica-en-vivo-karaoke-show-dj-codAAULUGQ.html">Ir al
+          aviso</a>
+      </p>
+
+      <p> Masaje 4 Manos
+        <br>ROSARIO SUR 91,
+        <br>Las Condes, Metropolitana de Santiago
+        <br><a href="https://www.economicos.cl/servicios/masaje-4-manos-codAAULUDA.html">Ir al aviso</a>
+      </p>
+
+      <p> Chevrolet Captiva OTTO 1.5 2019
+        <br>$12.990.000 47.216 Kms
+        <br>Santiago, Metropolitana de Santiago
+        <br><a
+          href="https://www.economicos.cl/vehiculos/chevrolet-captiva-2019-metropolitana-de-santiago-cod76353612.html">Ir
+          al aviso</a>
+      </p>
+
+      <p> Lavado de cortinas roller y persianas
+        <br>Todos los modelos y marcas
+        <br>Buín, Metropolitana de Santiago
+        <br><a href="https://www.economicos.cl/servicios/lavado-de-cortinas-roller-y-persianas-codAAULPOA.html">Ir al aviso</a>
+      </p>
+
+      <p> Aviso 7 </p>
+
+      <p> Aviso 8 </p>
+
+      <p> Aviso 8 </p>
+
+      <p> Aviso 8 </p>
+
+      <p> Aviso 8 </p>
+
+      <p> Aviso 8 </p>
 
 
-    
-<h2 id="publicar">¿Te gustaría publicar un artículo?</h2>
-<!-- Botón para mostrar/ocultar el formulario -->
-<button id="toggle-form">Publicar Artículo</button>
 
-<!-- Formulario para agregar un nuevo artículo -->
-<div id="form-container" style="display: none;">
-  <form id="form-articulo">
-    <label for="titulo">Título:</label><br>
-    <input type="text" id="titulo" name="titulo"><br>
-    <label for="seccion">Sección:</label><br>
-    <select id="seccion" name="seccion">
-      <option value="generales">Noticias Generales</option>
-      <option value="deporte">Noticias de Deporte</option>
-      <option value="negocios">Noticias de Negocios/Emprendimiento</option>
-    </select><br>
-    <label for="categoria">Categoría:</label><br>
-    <input type="text" id="categoria" name="categoria"><br>
-    <label for="descripcion">Descripción:</label><br>
-    <textarea id="descripcion" name="descripcion"></textarea><br>
-    <label for="imagen">Añadir imagen mediante URL:</label><br>
-    <input type="text" id="imagen" name="imagen">
-    <button class="button is-danger" type="submit">Publicar Artículo</button>
-  </form>
-</div>
+      <!-- Agrega más avisos aquí -->
+    </div>
+  </section>
 
-<script> // Si el formulario está visible, lo ocultamos; si está oculto, lo mostramos
-  document.addEventListener('DOMContentLoaded', function() {
-    const formContainer = document.getElementById('form-container');
-    const toggleFormButton = document.getElementById('toggle-form');
+  <div></div>
+  <h2 id="publicar">¿Te gustaría publicar un artículo?</h2>
+  <!-- Botón para mostrar/ocultar el formulario -->
+  <button id="toggle-form">Publicar Artículo</button>
 
-    toggleFormButton.addEventListener('click', function() {
-      // Si el formulario está visible, lo ocultamos; si está oculto, lo mostramos
-      formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+  <!-- Formulario para agregar un nuevo artículo -->
+  <div id="form-container" style="display: none;">
+    <form id="form-articulo">
+      <label for="titulo">Título:</label><br>
+      <input type="text" id="titulo" name="titulo"><br>
+      <label for="seccion">Sección:</label><br>
+      <select id="seccion" name="seccion">
+        <option value="generales">Noticias Generales</option>
+        <option value="deporte">Noticias de Deporte</option>
+        <option value="negocios">Noticias de Negocios/Emprendimiento</option>
+      </select><br>
+      <label for="categoria">Categoría:</label><br>
+      <input type="text" id="categoria" name="categoria"><br>
+      <label for="descripcion">Descripción:</label><br>
+      <textarea id="descripcion" name="descripcion"></textarea><br>
+      <label for="imagen">Añadir imagen mediante URL:</label><br>
+      <input type="text" id="imagen" name="imagen">
+      <button class="button is-danger" type="submit">Publicar Artículo</button>
+    </form>
+  </div>
+
+  <script> // Si el formulario está visible, lo ocultamos; si está oculto, lo mostramos
+    document.addEventListener('DOMContentLoaded', function () {
+      const formContainer = document.getElementById('form-container');
+      const toggleFormButton = document.getElementById('toggle-form');
+
+      toggleFormButton.addEventListener('click', function () {
+        // Si el formulario está visible, lo ocultamos; si está oculto, lo mostramos
+        formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+      });
     });
-  });
-</script>
+  </script>
 
-    <script src="nuevo_articulo.js"></script>
-    <!-- Sección Noticias Generales -->
-    <section class="has-text-black" id="inicio">
-        <h1 class="is-size-3 has-text-centered">Noticias Generales<span class="article-count"></span></h1>
-        <div class="news-item">
-          <img src="media/ocean.jpg" alt="Título de la noticia 2" class="news-image zoomable">
-          <div class="news-text">
-            <h2 class="is-size-4">Descubren gigantesco océano oculto: lo relacionan a teoría sobre origen del agua en la Tierra</h2>
-            <small>Mundo</small>
-            <hr class="custom-hr">
-            <p>Un nuevo hallazgo remueve el mundo de la ciencia, después de que un grupo de especialistas descubriera un enorme océano oculto.</p>
-            <p>El gigantesco cuerpo de agua se encuentra escondido debajo de Norteamérica y según los expertos equivaldría en tamaño a tres océanos juntos. </p>
-            <p>De acuerdo a LUN, el agua detectada a 700 kilómetros de la  superficie, se encuentra almacenada en un mineral azul denominado ringwoodita. El investigador y autor principal del estudio, Steven Jacobsen, califico este tipo de piedra como una "esponja que absorbe agua".</p>
-            <p>Durante el estudio se pudo descubrir que más del 1% del peso de la enorme roca podría estar compuesto por este recurso. De acuerdo al medio, los especialistas usaron dos mil sismógrafos, para así analizar las ondas sísmicas de 500 terremotos.</p>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-        
+  <script src="nuevo_articulo.js"></script>
+  <!-- Sección Noticias Generales -->
+  <section class="has-text-black" id="inicio">
+    <h1 class="is-size-3 has-text-centered">Noticias Generales<span class="article-count"></span></h1>
+    <div class="news-item">
+      <img src="media/ocean.jpg" alt="Título de la noticia 2" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">Descubren gigantesco océano oculto: lo relacionan a teoría sobre origen del agua en la
+          Tierra</h2>
+        <small>Mundo</small>
         <hr class="custom-hr">
+        <p>Un nuevo hallazgo remueve el mundo de la ciencia, después de que un grupo de especialistas descubriera un
+          enorme océano oculto.</p>
+        <p>El gigantesco cuerpo de agua se encuentra escondido debajo de Norteamérica y según los expertos equivaldría
+          en tamaño a tres océanos juntos. </p>
+        <p>De acuerdo a LUN, el agua detectada a 700 kilómetros de la superficie, se encuentra almacenada en un mineral
+          azul denominado ringwoodita. El investigador y autor principal del estudio, Steven Jacobsen, califico este
+          tipo de piedra como una "esponja que absorbe agua".</p>
+        <p>Durante el estudio se pudo descubrir que más del 1% del peso de la enorme roca podría estar compuesto por
+          este recurso. De acuerdo al medio, los especialistas usaron dos mil sismógrafos, para así analizar las ondas
+          sísmicas de 500 terremotos.</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
 
-        <div class="news-item">
-          <img src="media/openaivoz.jpg" alt="Título de la noticia 2" class="news-image zoomable">
-          <div class="news-text">
-            <h2 class="is-size-4">OpenAI creó un clonador de voz tan poderoso que ahora teme lanzarlo al público</h2>
-            <small>Tecnología | Industria</small>
-            <hr class="custom-hr">
-            <p>Con una muestra de apenas 15 segundos es capaz de simular la voz de una persona. Este año electoral en Estados Unidos ya se han dado casos de llamadas automáticas con voces clonadas de políticos como el presidente Joe Biden.</p>
-            <p>La empresa de inteligencia artificial (IA) OpenAI dijo este lunes que mediante su modelo Voice Engine puede clonar voces humanas reproduciendo un sonido natural "emotivo y realista" usando una muestra de 15 segundos, pero que aún no lanzará la tecnología al público general, ya que sería demasiado arriesgado.</p>
-            <p>"Reconocemos que generar un discurso que se asemeje a las voces de las personas conlleva serios riesgos, que son especialmente importantes en un año electoral", apuntó en un comunicado los creadores de ChatGPT.</p>
-            <p>Voice Engine es un nuevo modelo de IA que puede convertir texto a voz para crear voces sintéticas, que, según la compañía, pueden permitir que los creadores de contenidos puedan traducir su trabajo en otras lenguas sin perder sus acentos nativos y ayudar a las personas con problemas de comunicación verbal a usar su voz para, por ejemplo, llamar por teléfono.</p>
-            <p>A continuación se presenta un audio generado por inteligencia artificial de una conversación entre Donald Trump y Joe Biden:</p>
+    <hr class="custom-hr">
 
-          </div>
-        </div>
-        <!-- Audio -->
-        <div style="text-align: left; width: 67%; margin: auto;">
-          <audio controls>
-            <source src="media\aivoiceaudio.mp3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-          </audio>
-        </div>                
+    <div class="news-item">
+      <img src="media/openaivoz.jpg" alt="Título de la noticia 2" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">OpenAI creó un clonador de voz tan poderoso que ahora teme lanzarlo al público</h2>
+        <small>Tecnología | Industria</small>
         <hr class="custom-hr">
-        <div class="news-item">
-          <img src="media/fallinbuild.jpg" alt="Título de la noticia 2" class="news-image zoomable">
-          <div class="news-text">
-            <h2 class="is-size-4">El sismo más potente en 25 años: el momento exacto en el que se derrumba un edificio en Taiwán </h2>
-            <small>Internacional</small>
-            <hr class="custom-hr">
-            <p>Numerosos edificios e infraestructuras sufrieron daños como consecuencia del terremoto de gran magnitud y muchos quedaron registrados por las cámaras.</p>
-            <p>
-              Este miércoles, un potente terremoto de magnitud superior a 7 sacudió Taiwán, dejando al menos nueve muertos y más de 800 heridos. Luego de que tuviera lugar este catastrófico hecho, comenzaron a regir alertas sobre un posible tsunami en la costa del este de Asia, las cuales luego fueron descartadas.
-            </p>
-            <p>Todos los decesos ocurrieron en el condado de Hualien, el punto más cercano al epicentro del sismo. “Todo temblaba violentamente. Los cuadros en la pared, el televisor y el mueble de licores se cayeron”, dijo un vecino.</p>
-            <p>Según las autoridades taiwanesas, el sismo y sus réplicas fueron los más intensos en esta isla en 25 años. Los temblores produjeron cientos de desastres materiales, muchos de los cuales quedaron registrados en videos.
-              En las redes circula un video que refleja a la perfección el pánico que debieron atravesar los habitantes del lugar luego de que un enorme edificio se derrumbara. Además, enormes torres quedaron inclinadas.
-            </p>
-          </div>
-        </div>
-        <!-- Video -->
-        <div style="text-align: center;">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/DaJa-sAuYn8?si=UqGmpe69-zeHDKRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: auto;"></iframe>
-        </div>
-        <hr class="custom-hr">
-        <div id="articulos"></div>
-    </section>
-            
-    <!--  Sección Noticias de Deporte -->
-    <section class="has-text-black" id="deporte">
-        <h1 class="is-size-3 has-text-centered">Noticias de Deporte<span class="article-count"></span></h1>
-        <hr class="custom-hr">
-        <div class="news-item">
-            <img src="media/diegoparra.jpg" alt="Diego Parra" class="news-image zoomable">
-            <div class="news-text">
-              <h2 class="is-size-4">Diego Parra clasificó a los Juegos Olímpicos de París a los 16 años</h2>
-              <p>
-                El joven chileno Diego Parra clasificó a los Juegos Olímpicos de París 2024 luego que alcanzó un cupo en el Panamericano Clasificatorio de tiro deportivo en la categoría Pistola de Aire 10 metros.
-              </p>
-              <p>
-                El novel representante nacional se quedó con el primer puesto en la competición realizada en Buenos Aires con un puntaje de 244,2, dejando segundo al estadounidense Nickolaus Mowrer, quien logró 238,6, y tercero al canadiense Tugrul Ozen con 219,1.
-              </p>
-              <p>
-                Parra es el 19° clasificado nacional a la cita de los cinco anillos y, de momento, el más joven de la delegación.
-              </p>
-              <p>
-                "Diego logró 244,2 puntos para eliminar a sus rivales, todos medallistas en Santiago 2023. Incluso superó a Filipe Almeida Wu, plata en Río 2016", añadió. Parra logró el único cupo disponible que había para París 2024 en el torneo y es, hasta ahora, el deportista nacional más joven en clasificar a la próxima cita olímpica.
-              </p>
-              <p>
-                ¿Qué otros chilenos irán a los Juegos? Francisca Crovetto (tiro al vuelo), María José Mailliard (canotaje), Antonia y Melita Abraham (remo), César Abaroa y Eber Sanhueza (remo), Tomás Barrios (tenis), Ricardo Soto (tiro con arco), Carlos Díaz (maratón), Arantza Inostroza (esgrima), Néstor Almanza (lucha), Yasmani Acosta (lucha).
-              </p>
-            </div>
-        </div>
-        <hr class="custom-hr">
-        <div class="news-item">
-            <img src="media\17119667832461.webp" alt="Foto noticia" class="news-image zoomable">
-            <div class="news-text">
-              <h2 class="is-size-4">Los dueños de la F1 adquieren MotoGP por una cifra astronómica</h2>
-              <p>Era un secreto a voces y este lunes 1 de abril se ha hecho oficial. Liberty Media, titular de los derechos del Mundial de F1, ha oficializado la adquisición de Dorna Sports S.L. Los rectores del Gran Circo van a pagar un dineral para hacerse con el campeonato que tiene como estrellas a Marc Márquez, Pecco Bagnaia, Jorge Martín y el rookiePedro Acosta. Se habla de una cifra que rondará los 4.200 millones de euros.</p>
-              <p>
-                Recordemos que Dorna no sólo se encarga del certamen que incluye la clase reina del Mundial de motociclismo (MotoGP), Moto2 y Moto3, algo que llevan haciendo desde 1992. También controla el Mundial de Superbike (WSBK), donde Álvaro Bautista se ha coronado en los dos últimos años, y la Copa del Mundo de MotoE (Jordi Torres es bicampeón de la categoría eléctrica; el año pasado se impuso Mattia Casadei). Además, en 2024 se ha incorporado el nuevo Campeonato del Mundo FIM de Carreras Femeninas en Circuito.
-              </p>
-            </div>
-          </div>
-          
-          <hr class="custom-hr"> <!-- Barra separadora -->
-          
-          <div class="news-item">
-            <img src="media/tenis.avif" alt="foto noticia" class="news-image zoomable">
-            <div class="news-text">
-              <h2 class="is-size-4">Así queda el ranking ATP tras el Masters 1000 de Miami: ¿pierde Carlos Alcaraz el número 2?</h2>
-              <p>Sinner le quita a Alcaraz el número dos del ranking mundial y el revés a una mano vuelve al Top-10 con Dimitrov. Martínez sube 11 puestos y Nadal es 650º. </p>
-              <p>Carlos Alcaraz pierde el número dos del mundo. La victoria de Jannik Sinner en la fina del Masters 1.000 de Miami contra Grigor Dimitrov coloca al italiano en la segunda posición de la clasificación ATP por primera vez en su carrera. El español llevaba instalado entre los dos mejores desde el que alcanzó la primera posición el 12 de septiembre de 2022, después de proclamarse campeón del US Open. </p>
-              <p> Por delante de ellos se mantiene, como número uno, Novak Djokovic, con 9.725. El serbio solo defiende 315 hasta Roland Garros; Alcaraz, 1.545 y Sinner, 540. Por lo que el ganador de 24 Grand Slams, que le saca 1.080 al murciano y 1.365 al transalpino, tiene casi asegurado llegar al major francés como líder del ranking, con lo que acumularía 426 semanas en el trono.</p>
-            </div>
-          </div>
-          <hr class="custom-hr">
-    </section>
-    <!-- Sección Noticias de Negocios -->
-    <section class="has-text-black"  id="negocios">
-        <h1 class="is-size-3 has-text-centered">Noticias de Negocios/Emprendimientos<span class="article-count"></span></h1>
-        <hr class="custom-hr">
-      
-              <div class="news-item">
-                  <img src="media/dollar.jpg" class="news-image zoomable">
-                  <div class="news-text">
-                    <h2 class="is-size-4">Dólar se desploma y anota su mayor caída en más de cuatro meses</h2>
-                    <p>La moneda de Estados Unidos en Chile cae tras cerrar este martes a la baja y con un inicio de jornada sin un rumbo claro. El dólar arrancó una nueva jornada sin un rumbo claro tras cerrar este martes con un caída, pero tras las nuevas señales del Banco Central la divisa definió su trayectoria. La moneda de Estados Unidos perdió terreno en Chile en un jornada marcada por la decisión de recorte de la tasa de interés, que se conoció ayer con el mercado cambiario cerrado y estuvo en línea con lo esperado por el mercado, y por la publicación del Informe de Política Monetaria (IPoM).</p>
-                  </div>
-                </div>
-      
-              <div class="news-item">
-                  <img src="media/bancocentral.jpg" class="news-image zoomable">
-                  <div class="news-text">
-                    <h2 class="is-size-4">El Banco Central acordó este martes rebajar en 75 puntos base la tasa de interés, situándola en 6,5%</h2>
-                    <p>El Consejo definió una reducción de 75 puntos base, en línea con lo recomendado por el Grupo de Política Monetaria. El ente prevé que, en línea con el escenario central del IPoM de marzo, la TPM seguirá reduciéndose".</p>
-                  </div>
-                </div>
-      
-              <div class="news-item">
-                  <img src="media/womsernac.png" class="news-image zoomable">
-                  <div class="news-text">
-                    <h2 class="is-size-4">Sernac exige información a WOM tras acogerse a ley de quiebra en EEUU</h2>
-                    <p>La entidad entregó un plazo de 10 días hábiles para que la empresa notifique sobre su actual situación financiera. En caso de detectar alguna infracción a la Ley del Consumidor, el organismo adelantó que adoptará para "medidas" ir en defensa de las personas afectadas.</p>
-                  </div>
-                </div>
-    </section>
-    <script>// Función para contar y actualizar los artículos en cada sección
-      function actualizarContadores() {
-          const secciones = document.querySelectorAll('section');
-          secciones.forEach(seccion => {
-              const contador = seccion.querySelector('.article-count');
-              const cantidadArticulos = seccion.querySelectorAll('.news-item').length;
-              contador.textContent = ` (${cantidadArticulos} artículos)`;
-          });
-      }
+        <p>Con una muestra de apenas 15 segundos es capaz de simular la voz de una persona. Este año electoral en
+          Estados Unidos ya se han dado casos de llamadas automáticas con voces clonadas de políticos como el presidente
+          Joe Biden.</p>
+        <p>La empresa de inteligencia artificial (IA) OpenAI dijo este lunes que mediante su modelo Voice Engine puede
+          clonar voces humanas reproduciendo un sonido natural "emotivo y realista" usando una muestra de 15 segundos,
+          pero que aún no lanzará la tecnología al público general, ya que sería demasiado arriesgado.</p>
+        <p>"Reconocemos que generar un discurso que se asemeje a las voces de las personas conlleva serios riesgos, que
+          son especialmente importantes en un año electoral", apuntó en un comunicado los creadores de ChatGPT.</p>
+        <p>Voice Engine es un nuevo modelo de IA que puede convertir texto a voz para crear voces sintéticas, que, según
+          la compañía, pueden permitir que los creadores de contenidos puedan traducir su trabajo en otras lenguas sin
+          perder sus acentos nativos y ayudar a las personas con problemas de comunicación verbal a usar su voz para,
+          por ejemplo, llamar por teléfono.</p>
+        <p>A continuación se presenta un audio generado por inteligencia artificial de una conversación entre Donald
+          Trump y Joe Biden:</p>
 
-      // Llamar a la función cuando se carga la página
-      window.addEventListener('load', actualizarContadores);
-    </script>
+      </div>
+    </div>
+    <!-- Audio -->
+    <div style="text-align: left; width: 67%; margin: auto;">
+      <audio controls>
+        <source src="media\aivoiceaudio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+    <hr class="custom-hr">
+    <div class="news-item">
+      <img src="media/fallinbuild.jpg" alt="Título de la noticia 2" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">El sismo más potente en 25 años: el momento exacto en el que se derrumba un edificio en
+          Taiwán </h2>
+        <small>Internacional</small>
+        <hr class="custom-hr">
+        <p>Numerosos edificios e infraestructuras sufrieron daños como consecuencia del terremoto de gran magnitud y
+          muchos quedaron registrados por las cámaras.</p>
+        <p>
+          Este miércoles, un potente terremoto de magnitud superior a 7 sacudió Taiwán, dejando al menos nueve muertos y
+          más de 800 heridos. Luego de que tuviera lugar este catastrófico hecho, comenzaron a regir alertas sobre un
+          posible tsunami en la costa del este de Asia, las cuales luego fueron descartadas.
+        </p>
+        <p>Todos los decesos ocurrieron en el condado de Hualien, el punto más cercano al epicentro del sismo. “Todo
+          temblaba violentamente. Los cuadros en la pared, el televisor y el mueble de licores se cayeron”, dijo un
+          vecino.</p>
+        <p>Según las autoridades taiwanesas, el sismo y sus réplicas fueron los más intensos en esta isla en 25 años.
+          Los temblores produjeron cientos de desastres materiales, muchos de los cuales quedaron registrados en videos.
+          En las redes circula un video que refleja a la perfección el pánico que debieron atravesar los habitantes del
+          lugar luego de que un enorme edificio se derrumbara. Además, enormes torres quedaron inclinadas.
+        </p>
+      </div>
+    </div>
+    <!-- Video -->
+    <div style="text-align: center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DaJa-sAuYn8?si=UqGmpe69-zeHDKRp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: auto;"></iframe>
+    </div>
+    <hr class="custom-hr">
+    <div id="articulos"></div>
+  </section>
+
+  <!--  Sección Noticias de Deporte -->
+  <section class="has-text-black" id="deporte">
+    <h1 class="is-size-3 has-text-centered">Noticias de Deporte<span class="article-count"></span></h1>
+    <hr class="custom-hr">
+    <div class="news-item">
+      <img src="media/diegoparra.jpg" alt="Diego Parra" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">Diego Parra clasificó a los Juegos Olímpicos de París a los 16 años</h2>
+        <p>
+          El joven chileno Diego Parra clasificó a los Juegos Olímpicos de París 2024 luego que alcanzó un cupo en el
+          Panamericano Clasificatorio de tiro deportivo en la categoría Pistola de Aire 10 metros.
+        </p>
+        <p>
+          El novel representante nacional se quedó con el primer puesto en la competición realizada en Buenos Aires con
+          un puntaje de 244,2, dejando segundo al estadounidense Nickolaus Mowrer, quien logró 238,6, y tercero al
+          canadiense Tugrul Ozen con 219,1.
+        </p>
+        <p>
+          Parra es el 19° clasificado nacional a la cita de los cinco anillos y, de momento, el más joven de la
+          delegación.
+        </p>
+        <p>
+          "Diego logró 244,2 puntos para eliminar a sus rivales, todos medallistas en Santiago 2023. Incluso superó a
+          Filipe Almeida Wu, plata en Río 2016", añadió. Parra logró el único cupo disponible que había para París 2024
+          en el torneo y es, hasta ahora, el deportista nacional más joven en clasificar a la próxima cita olímpica.
+        </p>
+        <p>
+          ¿Qué otros chilenos irán a los Juegos? Francisca Crovetto (tiro al vuelo), María José Mailliard (canotaje),
+          Antonia y Melita Abraham (remo), César Abaroa y Eber Sanhueza (remo), Tomás Barrios (tenis), Ricardo Soto
+          (tiro con arco), Carlos Díaz (maratón), Arantza Inostroza (esgrima), Néstor Almanza (lucha), Yasmani Acosta
+          (lucha).
+        </p>
+      </div>
+    </div>
+    <hr class="custom-hr">
+    <div class="news-item">
+      <img src="media\17119667832461.webp" alt="Foto noticia" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">Los dueños de la F1 adquieren MotoGP por una cifra astronómica</h2>
+        <p>Era un secreto a voces y este lunes 1 de abril se ha hecho oficial. Liberty Media, titular de los derechos
+          del Mundial de F1, ha oficializado la adquisición de Dorna Sports S.L. Los rectores del Gran Circo van a pagar
+          un dineral para hacerse con el campeonato que tiene como estrellas a Marc Márquez, Pecco Bagnaia, Jorge Martín
+          y el rookiePedro Acosta. Se habla de una cifra que rondará los 4.200 millones de euros.</p>
+        <p>
+          Recordemos que Dorna no sólo se encarga del certamen que incluye la clase reina del Mundial de motociclismo
+          (MotoGP), Moto2 y Moto3, algo que llevan haciendo desde 1992. También controla el Mundial de Superbike (WSBK),
+          donde Álvaro Bautista se ha coronado en los dos últimos años, y la Copa del Mundo de MotoE (Jordi Torres es
+          bicampeón de la categoría eléctrica; el año pasado se impuso Mattia Casadei). Además, en 2024 se ha
+          incorporado el nuevo Campeonato del Mundo FIM de Carreras Femeninas en Circuito.
+        </p>
+      </div>
+    </div>
+
+    <hr class="custom-hr"> <!-- Barra separadora -->
+
+    <div class="news-item">
+      <img src="media/tenis.avif" alt="foto noticia" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">Así queda el ranking ATP tras el Masters 1000 de Miami: ¿pierde Carlos Alcaraz el número
+          2?</h2>
+        <p>Sinner le quita a Alcaraz el número dos del ranking mundial y el revés a una mano vuelve al Top-10 con
+          Dimitrov. Martínez sube 11 puestos y Nadal es 650º. </p>
+        <p>Carlos Alcaraz pierde el número dos del mundo. La victoria de Jannik Sinner en la fina del Masters 1.000 de
+          Miami contra Grigor Dimitrov coloca al italiano en la segunda posición de la clasificación ATP por primera vez
+          en su carrera. El español llevaba instalado entre los dos mejores desde el que alcanzó la primera posición el
+          12 de septiembre de 2022, después de proclamarse campeón del US Open. </p>
+        <p> Por delante de ellos se mantiene, como número uno, Novak Djokovic, con 9.725. El serbio solo defiende 315
+          hasta Roland Garros; Alcaraz, 1.545 y Sinner, 540. Por lo que el ganador de 24 Grand Slams, que le saca 1.080
+          al murciano y 1.365 al transalpino, tiene casi asegurado llegar al major francés como líder del ranking, con
+          lo que acumularía 426 semanas en el trono.</p>
+      </div>
+    </div>
+    <hr class="custom-hr">
+  </section>
+  <!-- Sección Noticias de Negocios -->
+  <section class="has-text-black" id="negocios">
+    <h1 class="is-size-3 has-text-centered">Noticias de Negocios/Emprendimientos<span class="article-count"></span></h1>
+    <hr class="custom-hr">
+
+    <div class="news-item">
+      <img src="media/dollar.jpg" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">Dólar se desploma y anota su mayor caída en más de cuatro meses</h2>
+        <p>La moneda de Estados Unidos en Chile cae tras cerrar este martes a la baja y con un inicio de jornada sin un
+          rumbo claro. El dólar arrancó una nueva jornada sin un rumbo claro tras cerrar este martes con un caída, pero
+          tras las nuevas señales del Banco Central la divisa definió su trayectoria. La moneda de Estados Unidos perdió
+          terreno en Chile en un jornada marcada por la decisión de recorte de la tasa de interés, que se conoció ayer
+          con el mercado cambiario cerrado y estuvo en línea con lo esperado por el mercado, y por la publicación del
+          Informe de Política Monetaria (IPoM).</p>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="media/bancocentral.jpg" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">El Banco Central acordó este martes rebajar en 75 puntos base la tasa de interés,
+          situándola en 6,5%</h2>
+        <p>El Consejo definió una reducción de 75 puntos base, en línea con lo recomendado por el Grupo de Política
+          Monetaria. El ente prevé que, en línea con el escenario central del IPoM de marzo, la TPM seguirá
+          reduciéndose".</p>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="media/womsernac.png" class="news-image zoomable">
+      <div class="news-text">
+        <h2 class="is-size-4">Sernac exige información a WOM tras acogerse a ley de quiebra en EEUU</h2>
+        <p>La entidad entregó un plazo de 10 días hábiles para que la empresa notifique sobre su actual situación
+          financiera. En caso de detectar alguna infracción a la Ley del Consumidor, el organismo adelantó que adoptará
+          para "medidas" ir en defensa de las personas afectadas.</p>
+      </div>
+    </div>
+  </section>
+  <script>// Función para contar y actualizar los artículos en cada sección
+    function actualizarContadores() {
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(seccion => {
+        const contador = seccion.querySelector('.article-count');
+        const cantidadArticulos = seccion.querySelectorAll('.news-item').length;
+        contador.textContent = ` (${cantidadArticulos} artículos)`;
+      });
+    }
+
+    // Llamar a la función cuando se carga la página
+    window.addEventListener('load', actualizarContadores);
+  </script>
   <!-- Formulario de contacto -->
   <section class="has-text-black" id="contacto">
     <h2>Contacto</h2>
     <form id="form-contacto">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        <button class="button">Enviar</button>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button class="button">Enviar</button>
     </form>
   </section>
-    <script> //Script del formulario de contacto
-        const formContacto = document.getElementById('form-contacto');
+  <script> //Script del formulario de contacto
+    const formContacto = document.getElementById('form-contacto');
 
-        formContacto.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
+    formContacto.addEventListener('submit', function (event) {
+      event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
 
-            // Aquí puedes agregar el código para enviar el formulario, como una solicitud AJAX o simplemente mostrar un mensaje de éxito
-            alert('Formulario enviado correctamente');
-            formContacto.reset(); // Limpiar el formulario después del envío
-        });
-    </script>
-    <br>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>El Faro - Periódico Digital by Patricio Palma</strong><br>
-          <strong>No Copyright</strong><br>
-          <strong>2024</strong>
-        </p>
-      </div>
-    </footer>
-    <script src="fullimage.js"></script>
-    <script src="fixednav.js"></script>
-    
+      // Aquí puedes agregar el código para enviar el formulario, como una solicitud AJAX o simplemente mostrar un mensaje de éxito
+      alert('Formulario enviado correctamente');
+      formContacto.reset(); // Limpiar el formulario después del envío
+    });
+  </script>
+  <br>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>El Faro - Periódico Digital Comunitario by Patricio Palma</strong><br>
+        <strong>No Copyright</strong><br>
+        <strong>2024</strong>
+      </p>
+    </div>
+  </footer>
+  <script src="fullimage.js"></script>
+  <script src="fixednav.js"></script>
+  <script src="avisosloop.js"></script>
+
 
 </body>
 
