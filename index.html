@@ -44,63 +44,20 @@
     <a href="#contacto">Contáctanos</a>
   </nav>
   
+  <!-- Avisos -->
 
-  <section id="avisos" onmouseover="pauseAvisos()" onmouseout="resumeAvisos()">
-    <div class="avisos-container">
-      <!-- Los avisos individuales se agregarán aquí -->
-      <p> Oficina o Casa Oficina en Arriendo<br> SECTOR EL GOLF / WTC<br> Las Condes, Metropolitana de
-        Santiago
-        <br><a
-          href="https://www.economicos.cl/propiedades/oficina-o-casa-oficina-en-arriendo-en-las-condes-codR99575120-8L0-2910323.html">Ir
-          al aviso</a>
-      </p>
-
-      <p> Fiestas ,musica en vivo,
-        <br>Karaoke, Show Dj.
-        <br>Ñuñoa, Metropolitana de Santiago
-        <br><a href="https://www.economicos.cl/servicios/fiestas-musica-en-vivo-karaoke-show-dj-codAAULUGQ.html">Ir al
-          aviso</a>
-      </p>
-
-      <p> Masaje 4 Manos
-        <br>ROSARIO SUR 91,
-        <br>Las Condes, Metropolitana de Santiago
-        <br><a href="https://www.economicos.cl/servicios/masaje-4-manos-codAAULUDA.html">Ir al aviso</a>
-      </p>
-
-      <p> Chevrolet Captiva OTTO 1.5 2019
-        <br>$12.990.000 47.216 Kms
-        <br>Santiago, Metropolitana de Santiago
-        <br><a
-          href="https://www.economicos.cl/vehiculos/chevrolet-captiva-2019-metropolitana-de-santiago-cod76353612.html">Ir
-          al aviso</a>
-      </p>
-
-      <p> Lavado de cortinas roller y persianas
-        <br>Todos los modelos y marcas
-        <br>Buín, Metropolitana de Santiago
-        <br><a href="https://www.economicos.cl/servicios/lavado-de-cortinas-roller-y-persianas-codAAULPOA.html">Ir al aviso</a>
-      </p>
-
-      <p> Aviso 7 </p>
-
-      <p> Aviso 8 </p>
-
-      <p> Aviso 8 </p>
-
-      <p> Aviso 8 </p>
-
-      <p> Aviso 8 </p>
-
-      <p> Aviso 8 </p>
-
-
-
-      <!-- Agrega más avisos aquí -->
+  <div class="avisoss">
+    <div class="avisoss-slide">
+      <p>AVISO</p>
+      <p>AVISO</p>
+      <p>AVISO</p>
+      <p>AVISO</p>
+      <p>AVISO</p>
+      <p>AVISO</p>
     </div>
-  </section>
 
-  <div></div>
+  </div>
+
   <h2 id="publicar">¿Te gustaría publicar un artículo?</h2>
   <!-- Botón para mostrar/ocultar el formulario -->
   <button id="toggle-form">Publicar Artículo</button>
@@ -393,6 +350,10 @@
   <script src="fullimage.js"></script>
   <script src="fixednav.js"></script>
   <script src="avisosloop.js"></script>
+  <script>
+    var copy = document.querySelector(".avisoss-slide").cloneNode(true);
+    document.querySelector(".avisoss").appendChild(copy);
+  </script>
 
 
 </body>

@@ -527,3 +527,53 @@ footer {
     }
 }
 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.avisoss {
+    overflow: hidden;
+    padding: 10px 0;
+    white-space: nowrap;
+    background: #000000;
+    position: relative;
+}
+
+.avisoss:before,
+.avisoss:after {
+    position: absolute;
+    top: 0;
+
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.avisoss:before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), #555);
+}
+
+.avisoss:after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), #555);
+}
+
+.avisoss:hover .avisoss-slide {
+    animation-play-state: paused;
+}
+
+.avisoss-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+.avisoss-slide p {
+    display: inline-block;
+    margin: 0 100px;
+}
